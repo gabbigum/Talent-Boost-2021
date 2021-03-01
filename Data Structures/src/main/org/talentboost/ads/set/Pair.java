@@ -6,8 +6,22 @@ import java.util.*;
 public class Pair {
     // Complete the pairs function below.
     static Integer pairs(int k, Integer[] arr) {
+        // O(n)
+
+        Set<Integer> numbers = new HashSet<>(List.of(arr));
+        Integer pairCounter = 0;
+
+        for(Integer num : numbers) {
+            if(numbers.contains(num + k)) {
+                pairCounter++;
+            }
+        }
+
+        return pairCounter;
+        /* O(n^2)
         // put arr elements in different set pairs
         // check if the difference is exactly K and put it in pairs
+
         Set<List<Integer>> pairsSet = new HashSet<>();
 
         for(int i = 0; i < arr.length; i++) {
@@ -20,6 +34,8 @@ public class Pair {
             }
         }
         return pairsSet.size();
+
+         */
     }
 
     private static final Scanner scanner = new Scanner(System.in);
