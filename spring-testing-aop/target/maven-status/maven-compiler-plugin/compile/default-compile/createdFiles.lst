@@ -1,0 +1,15 @@
+com\vmware\talentboost\spring\MainApp.class
+com\vmware\talentboost\spring\impl\QuestionManager.class
+com\vmware\talentboost\spring\config\AppConfig.class
+com\vmware\talentboost\spring\impl\Player.class
+com\vmware\talentboost\spring\data\PlayerResponse.class
+com\vmware\talentboost\spring\impl\AccountManager.class
+com\vmware\talentboost\spring\IQuestionManager.class
+com\vmware\talentboost\spring\data\UserAccount.class
+com\vmware\talentboost\spring\IRepository.class
+com\vmware\talentboost\spring\impl\Repository.class
+com\vmware\talentboost\spring\data\UnauthorizedException.class
+com\vmware\talentboost\spring\aspects\AuthLoggingAspect.class
+com\vmware\talentboost\spring\Game.class
+com\vmware\talentboost\spring\IAccountManager.class
+com\vmware\talentboost\spring\IPlayer.class

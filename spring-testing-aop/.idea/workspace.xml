@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b2e1a53-76a2-4f01-bd7e-cede6ca6cc8e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsExercises/out/production/AlgorithmsExercises/main/com/vmware/talentboost/algorithms/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsExercises/out/production/AlgorithmsExercises/main/com/vmware/talentboost/algorithms/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AlgorithmsExercises/src/main/com/vmware/talentboost/algorithms/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AlgorithmsExercises/src/main/com/vmware/talentboost/algorithms/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/IAccountManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/IAccountManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/IPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/IQuestionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/IQuestionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/impl/AccountManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/impl/AccountManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/impl/ConsolePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/impl/ConsolePlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/impl/HardCodedRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/impl/HardCodedRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/impl/QuestionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-di/src/main/java/com/vmware/talentboost/spring/impl/QuestionManager.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1qvOn1siirO1mSX81OvwKx6UE72" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../talent-boost-2021-materials/15-Spring-Framework/labs/spring-testing-aop" />
+  </component>
+  <component name="RunManager" selected="JUnit.AuthIT">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in spring-testing-aop-solution" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-testing-aop-solution" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-testing-aop-solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.com.vmware.talentboost.spring.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java.com.vmware.talentboost.spring.impl" />
+      <option name="MAIN_CLASS_NAME" value="java.com.vmware.talentboost.spring.impl.AuthIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthIT.testAuthenticationNegative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-testing-aop-solution" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.com.vmware.talentboost.spring.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="java.com.vmware.talentboost.spring.impl" />
+      <option name="MAIN_CLASS_NAME" value="java.com.vmware.talentboost.spring.impl.AuthIT" />
+      <option name="METHOD_NAME" value="testAuthenticationNegative" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AuthIT" />
+        <item itemvalue="JUnit.All in spring-testing-aop-solution" />
+        <item itemvalue="JUnit.AuthIT.testAuthenticationNegative" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b2e1a53-76a2-4f01-bd7e-cede6ca6cc8e" name="Default Changelist" comment="" />
+      <created>1617956762280</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617956762280</updated>
+      <workItem from="1617956763705" duration="1573000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

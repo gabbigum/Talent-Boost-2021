@@ -1,0 +1,3 @@
+java\com\vmware\talentboost\spring\impl\AuthIT.class
+com\vmware\talentboost\spring\config\TestConfig.class
+com\vmware\talentboost\spring\AuthenticateTestRepositoryStub.class

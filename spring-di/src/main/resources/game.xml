@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="Game"
+          class="com.vmware.talentboost.spring.Game">
+        <constructor-arg name="accountManager" ref="AccountManager"/>
+        <constructor-arg name="questionManager" ref="QuestionManager"/>
+        <constructor-arg name="player" ref="Player"/>
+    </bean>
+
+    <bean id="Repository"
+          class="com.vmware.talentboost.spring.impl.HardCodedRepository">
+    </bean>
+
+    <bean id="QuestionManager"
+          class="com.vmware.talentboost.spring.impl.QuestionManager">
+        <constructor-arg name="repo" ref="Repository"/>
+    </bean>
+
+    <bean id="Player"
+          class="com.vmware.talentboost.spring.impl.ConsolePlayer">
+    </bean>
+
+    <bean id="AccountManager"
+          class="com.vmware.talentboost.spring.impl.AccountManager">
+        <constructor-arg name="repo" ref="Repository"/>
+    </bean>
+</beans>
