@@ -38,4 +38,37 @@ public class UnitTest {
                 .andExpect(status().isOk());
     }
 
+
+    @Autowired
+    MockMvc mvc;
+
+    // https://docs.spring.io/spring-security/site/docs/4.2.x/reference/html/test-method.html
+
+    @Test
+    @WithMockUser(username = "talent", roles = {"PARTICIPANT"})
+    public void testUserWithParticipantRoleOnly() throws Exception {
+        mvc.perform(get("/talent-boost/mentors"))
+                .andExpect(status().isForbidden());
+    }
+
+    @Test
+    @WithMockUser(username = "talent", roles = {"PARTICIPANT"})
+    public void testUserWithParticipantRoleAccessingMentors() throws Exception {
+        mvc.perform(get("/talent-boost/mentors"))
+                .andExpect(status().isForbidden());
+    }
+
+    @Test
+    @WithMockUser(username = "mentor", roles = {"PARTICIPANT", "MENTOR"})
+    public void testUserWithMentorAndParticipantRoleAccessTalentBoost() throws Exception {
+        mvc.perform(get("/talent-boost"))
+                .andExpect(status().isOk());
+    }
+
+    @Test
+    @WithMockUser(username = "mentor-talent", roles = {"PARTICIPANT", "MENTOR"})
+    public void testUserWithMentorAndParticipantRole() throws Exception {
+        mvc.perform(get("/talent-boost/mentors"))
+                .andExpect(status().isOk());
+    }
 }
