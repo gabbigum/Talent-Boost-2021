@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<style>
+    body {
+        background-color: linen;
+    }
+
+    input[type="text"]{
+        display: block;
+    }
+
+    input[type="label"] {
+        display: block;
+    }
+
+    #firstName {
+        color: red;
+    }
+
+    .formcontainer {
+        border-style: solid;
+        display: inline-block;
+    }
+
+    #loveHtml {
+        display: block;
+    }
+    #yes {
+        display: block;
+    }
+    #btnSubmit {
+        display: block;
+    }
+</style>
+<body>
+
+<h1>Fill in the form:</h1>
+
+<form class="formcontainer">
+    <label id="firstName" for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" placeholder="My name">
+   
+    <label for="lname"> Last name:</label>
+    <input type="text" id="lname" name="lname">
+
+    <label id="loveHtml" type="text">I love HTML:</label>
+
+    <input type="radio" id="yes" name="radioGroup">
+    <label for="yes">Yes</label><br>
+    
+    <input type="radio" id="no" name="radioGroup">
+    <label for="no">No</label>
+
+    <button id="btnSubmit">Submit</button>   
+</form>
