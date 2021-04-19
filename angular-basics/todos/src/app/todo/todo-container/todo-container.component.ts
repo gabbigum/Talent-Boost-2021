@@ -8,9 +8,6 @@ import { Todo, TodoService } from '../todo.service';
   styleUrls: ['./todo-container.component.css']
 })
 export class TodoContainerComponent implements OnInit {
-  
-  todo: string;
-  
 
   constructor(public todoService: TodoService) { }
 
@@ -18,15 +15,18 @@ export class TodoContainerComponent implements OnInit {
   }
   
   addTodo(todo: string) {
-    this.todoService.addTodo(todo);
-  }
-
-  saveChanges() {
-    this.todoService.saveChanges();
+    
   }
   
   get todos(): Todo[] {
     return this.todoService.items;
+  }
+
+  submitForm(event :any) {
+    // const todo = event.target.todo.value;
+    if(event.target && event.target.todo) {
+      this.todoService.addTodo(event.target.todo.value);
+    }
   }
 
 }

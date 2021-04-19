@@ -26,7 +26,7 @@ export class TodoService {
     this.items = this.items.filter((item) => todo !== item)
   }
 
-  saveChanges() {
-    // do nothing
+  updateTodo(currentTodo: Todo, newTodo: string) {
+    currentTodo.label = newTodo;
   }
 }

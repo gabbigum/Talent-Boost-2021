@@ -9,7 +9,7 @@ import { Todo, TodoService } from '../todo.service';
 export class TodoItemComponent implements OnInit {
  
   @Input()
-  task: Todo;
+  todo: Todo;
 
   isEditable: boolean = false;
 
@@ -19,7 +19,17 @@ export class TodoItemComponent implements OnInit {
   }
 
   deleteTodo() {
-    this.todoService.deleteTodo(this.task);
+    this.todoService.deleteTodo(this.todo);
   }
 
+  updateTodo(event :any) {
+    if(event.target instanceof HTMLInputElement) {
+      this.todoService.updateTodo(this.todo, event.target.value);
+      this.toggleEdit();
+    }
+  }
+
+  toggleEdit() {
+    this.isEditable = !this.isEditable;
+  }
 }
