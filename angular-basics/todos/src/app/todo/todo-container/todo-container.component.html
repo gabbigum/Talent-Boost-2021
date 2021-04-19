@@ -1,0 +1,11 @@
+<form class="inputBox">
+    <input name="todo" type="text" [(ngModel)]="todo">
+    <button type="submit" (click)='addTodo(todo)'>Add Task</button>
+    <button type="submit" (click)='saveChanges()'>Save Changes</button>
+</form>
+
+<app-todo-item
+ *ngFor="let item of todos"
+ [task]="item"
+ >
+</app-todo-item>

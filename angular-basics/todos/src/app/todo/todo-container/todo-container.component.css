@@ -1,0 +1,8 @@
+.inputBox {
+    background-color: linen;
+    font-size: 50;
+    width: 100%;
+    padding: 50px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
