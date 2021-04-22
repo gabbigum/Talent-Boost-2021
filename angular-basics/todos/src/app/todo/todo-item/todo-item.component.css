@@ -1,0 +1,10 @@
+.todoDiv {
+    display: flex;
+    flex-direction:column;
+    border: 1px solid red;
+    gap: 0.5rem;
+}
+
+.todoDiv > div {
+    border: 1px solid green;
+}

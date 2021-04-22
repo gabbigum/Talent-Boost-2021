@@ -1,0 +1,20 @@
+<nav></nav>
+
+<form cds-layout="vertical gap:md" (submit)="authenticate()">
+    <cds-input cds-layout="m:lg" layout="vertical" control-width="shrink">
+        <label>Name</label>
+        <input [formControl]="name" placeholder="placeholder text" required />
+        <cds-control-message *ngIf="name.errors?.required && name.dirty" status="error">Name required</cds-control-message>
+
+    </cds-input>
+
+    <cds-password cds-layout="m:lg" layout="vertical" control-width="shrink">
+        <label>Password</label>
+        <input [formControl]="password" type="password" value="123456" />
+        <cds-control-message *ngIf="password.errors?.required && password.dirty" status="error">Password required</cds-control-message>
+        <cds-control-message *ngIf="password.errors?.minlength && password.dirty" status="error">Password must be atleast 6 characters
+        </cds-control-message>
+    </cds-password>
+
+    <cds-button cds-layout="m:lg" type="submit">submit</cds-button>
+</form>

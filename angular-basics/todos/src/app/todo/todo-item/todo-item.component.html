@@ -1,5 +1,11 @@
-<div>
-    <span>
-        <input name="task" type="text" [(ngModel)]="task.label"></span>
+<div *ngIf="!isEditable" class="todoDiv">
+    <div (click)="toggleEdit()">{{todo.label}}
+    </div>
     <button (click)="deleteTodo()">Delete</button>
 </div>
+
+<div *ngIf="isEditable">
+    <input type="text" (click)="clickedInput()" [value]="todo.label"
+    (keyup.enter)="updateTodo($event)">
+</div>
+
