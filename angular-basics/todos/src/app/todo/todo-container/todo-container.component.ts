@@ -11,6 +11,8 @@ export class TodoContainerComponent implements OnInit {
 
   constructor(public todoService: TodoService) { }
 
+  isTodoItemClicked: boolean = false;
+
   ngOnInit(): void {
   }
   
