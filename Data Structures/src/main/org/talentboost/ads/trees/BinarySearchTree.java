@@ -39,22 +39,60 @@ public class BinarySearchTree<T extends Comparable<T>> {
 
     private BinaryNode<T> deleteRec(BinaryNode<T> root, T value) {
         if (root == null) {
-            throw new NullPointerException();
+            return null;
+        } else if (value.compareTo(root.value) < 0) {
+            root.left = deleteRec(root.left, value);
+        } else if (value.compareTo(root.value) > 0) {
+            root.right = deleteRec(root.right, value);
+        } else {
+            // case 1: no child
+            if(root.left == null && root.right == null) {
+                root = null;
+                return root;
+            }
+            // case 2: 1 child
+            if(root.left == null) {
+                root.value = root.right.value;
+                root.right = null;
+            } else if(root.right == null) {
+                root.value = root.left.value;
+                root.left = null;
+            } else {
+                T temp = minValue(root.right);
+                root.value = temp;
+                root.right = deleteRec(root.right, temp);
+            }
         }
-
-        //    5
-        //   / \
-        //  4   7
-        //     / \
-        //    6   8
-        //
-        // when I want to delete root node -> find smallest leaf -> make it root -> delete the leaf - (mirror the action)
 
         return root;
     }
 
+    private T minValue(BinaryNode<T> root) {
+        T minv = root.value;
+        while(root.left != null) {
+            minv = minValue(root.left);
+            root = root.left;
+        }
+        return minv;
+    }
+
     public BinaryNode<T> search(T value) {
-        return new BinaryNode<>();
+        if(this.root == null || this.root.value.equals(value)) {
+            return null;
+        } else return recSearch(this.root, value);
+    }
+
+    private BinaryNode<T> recSearch(BinaryNode<T> root, T value) {
+        if(root == null || this.root.value.equals(value)) {
+            return null;
+        } else if(root.value.equals(value)) {
+            return root;
+        } else if (value.compareTo(root.value) < 0) {
+            return recSearch(root.left, value);
+        } else {
+            return recSearch(root.right, value);
+        }
+
     }
 
     public void preOrder(BinaryNode<T> root) {

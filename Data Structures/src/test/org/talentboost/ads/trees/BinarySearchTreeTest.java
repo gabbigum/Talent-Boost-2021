@@ -10,8 +10,9 @@ public class BinarySearchTreeTest {
     public static void main(String[] args) {
         BinarySearchTreeTest.testInsertion();
         BinarySearchTreeTest.testGetOrderedValues(); // Bonus points: uncomment and solve
-//        BinarySearchTreeTest.testDeletion();
-
+        BinarySearchTreeTest.testDeletion();
+        BinarySearchTreeTest.testDeleteWithOneChild();
+        BinarySearchTreeTest.testDeleteWithTwoChildren();
     }
 
     private static void testInsertion() {
@@ -43,6 +44,8 @@ public class BinarySearchTreeTest {
         tree.preOrder(tree.root);
     }
 
+
+
     private static void testGetOrderedValues() {
         BinarySearchTree<Integer> tree = new BinarySearchTree<>();
 
@@ -58,6 +61,32 @@ public class BinarySearchTreeTest {
         List<Integer> actualList   = tree.getOrderedValues();
 
         TreeUtils.assertList(actualList, expectedList);
+    }
+
+    private static void testDeleteWithTwoChildren() {
+        BinarySearchTree<Integer> tree = new BinarySearchTree<>();
+
+        tree.insert(50);
+        tree.insert(25);
+        tree.insert(75);
+        tree.insert(10);
+        tree.insert(60);
+        tree.insert(80);
+
+        tree.delete(75); // has two children
+    }
+
+    private static void testDeleteWithOneChild() {
+        BinarySearchTree<Integer> tree = new BinarySearchTree<>();
+
+        tree.insert(50);
+        tree.insert(25);
+        tree.insert(75);
+        tree.insert(10);
+        tree.insert(60);
+        tree.insert(80);
+
+        tree.delete(25); // has one child
     }
 
     private static void testDeletion() {
